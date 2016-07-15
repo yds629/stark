@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 url = 'http://job.nju.edu.cn:9081/login/nju/home.jsp?type=sxzp&pageNow=1'
 front = 'http://job.nju.edu.cn:9081/login/nju/'
 
+
 post_data = {
 	'Referer': "http://job.nju.edu.cn:9081/login/nju/home.jsp?type=sxzp&pageNow=1",
     'User-Agent':"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0"
