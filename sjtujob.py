@@ -19,6 +19,7 @@ job1=soup.find_all(id="tbc5_05_4")[0]
 
 pattern = re.compile('\'(.*?)\'',re.S)
 
+
 for job in job1.find_all(class_="zp_llb"):
     items = re.findall(pattern,job.find('a').get('onclick'))
     url = front + items[0]
