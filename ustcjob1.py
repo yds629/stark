@@ -9,6 +9,7 @@ post_data = {
     'Referer': "http://job.ustc.edu.cn/list.php?MenuID=002001", 
     'User-Agent':"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0"
     } 
+    
 return_data = requests.post(url, post_data)
 # print return_data.text
 soup = BeautifulSoup(return_data.text,'lxml')
