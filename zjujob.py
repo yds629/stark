@@ -7,6 +7,7 @@ front = 'http://www.career.zju.edu.cn/ejob/'
 
 #查询count条记录
 post_data = {
+    'pages.currentPage':'1',
     'Referer': "http://www.career.zju.edu.cn/ejob/zczphxxmorelogin.do", 
     'User-Agent':"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:47.0) Gecko/20100101 Firefox/47.0"
     } 
