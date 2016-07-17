@@ -17,6 +17,7 @@ soup = BeautifulSoup(return_data.text,'lxml')
 
 job1=soup.find_all(class_="result_con")[0]
 
+
 for job in job1.find_all(class_="con"):
     url = front + job.find('a').get('href')
     name = job.find_all('td')[0].get_text(strip=True)

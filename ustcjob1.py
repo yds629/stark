@@ -16,6 +16,7 @@ soup = BeautifulSoup(return_data.text,'lxml')
 
 job1=soup.find_all(class_="Joplistone")[1]
 
+
 for job in job1.find_all('li'):
     url = front + job.find('a').get('href')
     name = job.find('a').get_text(strip=True)
